@@ -47,11 +47,28 @@ require("lazy").setup({
 }, 
 
 {
+  "wakatime/vim-wakatime",
+  lazy = false,
+}, 
+
+
+{
   "akinsho/toggleterm.nvim",
   version = "*",
   config = true,
 }, 
 
+{
+  "akinsho/bufferline.nvim",
+  version = "*",
+  dependencies = "nvim-tree/nvim-web-devicons",
+  config = true,
+}, 
+
+{
+  "nvim-telescope/telescope.nvim",
+  dependencies = { "nvim-lua/plenary.nvim" },
+}, 
 
 
   "folke/tokyonight.nvim",            -- 🌙 Color scheme
