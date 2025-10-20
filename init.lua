@@ -9,7 +9,10 @@ require("core.cmp")
 require("core.terminal")
 require("core.statusline")
 require("core.bufferline")
+require("core.indent")
 
+vim.opt.number = true
+vim.opt.relativenumber = false
 
 -- tab 
 

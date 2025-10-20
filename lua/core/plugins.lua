@@ -70,6 +70,12 @@ require("lazy").setup({
   dependencies = { "nvim-lua/plenary.nvim" },
 }, 
 
+{
+  "lukas-reineke/indent-blankline.nvim",
+  main = "ibl",
+  opts = {},
+},
+
 
   "folke/tokyonight.nvim",            -- 🌙 Color scheme
   "nvim-lualine/lualine.nvim",        -- Status line
