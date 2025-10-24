@@ -60,14 +60,23 @@ vim.keymap.set("n", "<C-d>", "yyp", { desc = "Duplicate current line" })
 --
 --
 --
---
---
---
---
---
+
+
+-- disable arrow key 
+local opts = { noremap = true, silent = true }
+
+vim.keymap.set("", "<Up>", "<Nop>", opts)
+vim.keymap.set("", "<Down>", "<Nop>", opts)
+vim.keymap.set("", "<Left>", "<Nop>", opts)
+vim.keymap.set("", "<Right>", "<Nop>", opts)
 
 
 
+-- disable arrow key  in insert mode 
+vim.keymap.set("i", "<Up>", "<Nop>", opts)
+vim.keymap.set("i", "<Down>", "<Nop>", opts)
+vim.keymap.set("i", "<Left>", "<Nop>", opts)
+vim.keymap.set("i", "<Right>", "<Nop>", opts)
 
 
 
