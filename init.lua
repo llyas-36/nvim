@@ -91,3 +91,16 @@ vim.keymap.set("n", "<C-v>", '"+p', { desc = "Paste from system clipboard" })
 -- Paste with Ctrl + V in insert mode
 vim.keymap.set("i", "<C-v>", '<Esc>"+pa', { desc = "Paste from system clipboard" })
 
+
+
+
+
+
+
+-- comment key 
+
+-- Comment selected lines in visual mode with Ctrl + /
+vim.keymap.set("v", "<C-_>", "<Plug>(comment_toggle_linewise_visual)", { desc = "Toggle comment" })
+
+-- Comment current line in normal mode with Ctrl + /
+vim.keymap.set("n", "<C-_>", "<Plug>(comment_toggle_linewise_current)", { desc = "Toggle comment" })

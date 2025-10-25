@@ -69,7 +69,11 @@ require("lazy").setup({
   "nvim-telescope/telescope.nvim",
   dependencies = { "nvim-lua/plenary.nvim" },
 }, 
-
+-- comments 
+{
+  "numToStr/Comment.nvim",
+  config = true,
+}, 
 {
   "lukas-reineke/indent-blankline.nvim",
   main = "ibl",
