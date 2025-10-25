@@ -5,4 +5,4 @@ require("toggleterm").setup({
 })
 
 -- Optional keybinding to toggle terminal with <Ctrl-t>
-vim.keymap.set("n", "<C-t>", "<cmd>ToggleTerm direction=horizontal<CR>", { desc = "Toggle horizontal terminal" })
+vim.keymap.set("n", "<C-s>", "<cmd>ToggleTerm direction=horizontal<CR>", { desc = "Toggle horizontal terminal" })
