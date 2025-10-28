@@ -70,9 +70,12 @@ require("lazy").setup({
   dependencies = { "nvim-lua/plenary.nvim" },
 }, 
 -- comments 
+ 
 {
   "numToStr/Comment.nvim",
-  config = true,
+  config = function()
+    require("Comment").setup()
+  end,
 }, 
 {
   "lukas-reineke/indent-blankline.nvim",
